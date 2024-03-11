@@ -20,4 +20,4 @@ your preferred browser.</p>
 <pre><code class="has-line-data" data-line-start="33" data-line-end="35" class="language-sh">http://localhost:<span class="hljs-number">3000</span>
 </code></pre>
 <h2 class="code-line" data-line-start=36 data-line-end=37 ><a id="License_36"></a>License</h2>
-<p class="has-line-data" data-line-start="38" data-line-end="39">MIT</p>
+<p class="has-line-data" data-line-start="38" data-line-end="39">ISC</p>
