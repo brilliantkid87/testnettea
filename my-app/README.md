@@ -1,23 +1,36 @@
-<h1 class="code-line" data-line-start=0 data-line-end=1 ><a id="teas_Decentralized_Protocol_0"></a>tea’s Decentralized Protocol</h1>
-<p class="has-line-data" data-line-start="2" data-line-end="3"><a href="https://img.shields.io/github/contributors/brilliantkid87/tea-testnet?style=flat-squ"><img src="https://img.shields.io/github/contributors/brilliantkid87/tea-testnet?style=flat-squ" alt="Contributor"></a> <a href="https://img.shields.io/github/issues/brilliantkid87/tea-testnet?style=flat-square"><img src="https://img.shields.io/github/issues/brilliantkid87/tea-testnet?style=flat-square" alt="Issue"></a> <a href="https://img.shields.io/github/stars/brilliantkid87/tea-testnet?style=flat-square"><img src="https://img.shields.io/github/stars/brilliantkid87/tea-testnet?style=flat-square" alt="Starts"></a> <a href="https://img.shields.io/github/last-commit/brilliantkid87/tea-testnet?style=flat-square"><img src="https://img.shields.io/github/last-commit/brilliantkid87/tea-testnet?style=flat-square" alt="Last commit"></a> <a href="https://img.shields.io/github/languages/code-size/brilliantkid87/tea-testnet?style=flat-square"><img src="https://img.shields.io/github/languages/code-size/brilliantkid87/tea-testnet?style=flat-square" alt="languages"></a> <a href="https://img.shields.io/github/license/brilliantkid87/tea-testnet?style=flat-square"><img src="https://img.shields.io/github/license/brilliantkid87/tea-testnet?style=flat-square" alt="Issue"></a></p>
-<h2 class="code-line" data-line-start=4 data-line-end=5 ><a id="Stacks_4"></a>Stacks</h2>
-<p class="has-line-data" data-line-start="6" data-line-end="7">Before executing the application, ensure that the required programming language toolchains are installed and that any necessary services are running, considering the various stacks used in its development.</p>
-<h2 class="code-line" data-line-start=8 data-line-end=9 ><a id="Getting_Started_8"></a>Getting Started</h2>
-<p class="has-line-data" data-line-start="10" data-line-end="11">Recommended <a href="https://nodejs.org/">Node.js</a> v18+ or v20 to run.</p>
-<p class="has-line-data" data-line-start="12" data-line-end="13">Install the dependencies and devDependencies and start the server.</p>
-<p class="has-line-data" data-line-start="14" data-line-end="15">For Development</p>
-<pre><code class="has-line-data" data-line-start="16" data-line-end="20" class="language-sh"><span class="hljs-built_in">cd</span> my-app
-npm i
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+
+## Getting Started
+
+First, run the development server:
+
+```bash
 npm run dev
-</code></pre>
-<p class="has-line-data" data-line-start="21" data-line-end="22">For production</p>
-<pre><code class="has-line-data" data-line-start="24" data-line-end="28" class="language-sh"><span class="hljs-built_in">cd</span> my-app
-npm i
-npm run build
-</code></pre>
-<p class="has-line-data" data-line-start="29" data-line-end="31">Verify the deployment by navigating to your server address in<br>
-your preferred browser.</p>
-<pre><code class="has-line-data" data-line-start="33" data-line-end="35" class="language-sh">http://localhost:<span class="hljs-number">3000</span>
-</code></pre>
-<h2 class="code-line" data-line-start=36 data-line-end=37 ><a id="License_36"></a>License</h2>
-<p class="has-line-data" data-line-start="38" data-line-end="39">MIT</p>
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
+```
+
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+
+This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+
+## Learn More
+
+To learn more about Next.js, take a look at the following resources:
+
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+
+## Deploy on Vercel
+
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
