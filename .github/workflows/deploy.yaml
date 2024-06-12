@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main
+  workflow_dispatch:
 
 jobs:
   build:
@@ -44,10 +45,12 @@ jobs:
       - name: Deploy to VPS
         env:
           SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+          VPS_IP_ADDRESS: ${{ secrets.VPS_IP_ADDRESS }}
+          VPS_USERNAME: ${{ secrets.VPS_USERNAME }}
+          VPS_PATH: ${{ secrets.VPS_PATH }}
         run: |
           mkdir -p ~/.ssh
           echo "$SSH_PRIVATE_KEY" > ~/.ssh/id_rsa
           chmod 600 ~/.ssh/id_rsa
-          scp -o StrictHostKeyChecking=no -r dist/* user@your-vps-ip:/path/to/your/web/directory
-          ssh -o StrictHostKeyChecking=no user@your-vps-ip 'sudo systemctl restart nginx'
-
+          scp -o StrictHostKeyChecking=no -r dist/* $VPS_USERNAME@$VPS_IP_ADDRESS:$VPS_PATH
+          ssh -o StrictHostKeyChecking=no $VPS_USERNAME@$VPS_IP_ADDRESS 'sudo systemctl restart nginx'
